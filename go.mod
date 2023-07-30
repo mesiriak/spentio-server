@@ -1,3 +1,3 @@
-module https://github.com/mesiriak/spentio-server
+module spentio-server
 
 go 1.20
