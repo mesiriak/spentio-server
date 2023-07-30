@@ -1,0 +1,1 @@
+Maybe place here redis storage realization.
