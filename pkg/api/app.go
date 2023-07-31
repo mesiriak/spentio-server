@@ -9,8 +9,6 @@ import (
 
 type App struct {
 	Http      *http.ServeMux
-	Grpc      any
-	Websocket any
 	AppConfig *configs.Config
 }
 
@@ -19,8 +17,6 @@ func NewApp(config *configs.Config) App {
 
 	return App{
 		Http:      httpApp,
-		Grpc:      nil,
-		Websocket: nil,
 		AppConfig: config,
 	}
 }
