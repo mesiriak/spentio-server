@@ -6,7 +6,8 @@ import (
 )
 
 type Config struct {
-	JwtSecret string `mapstructure:"JWT_SECRET"`
+	AppAddress string `mapstructure:"API_ADDRESS" default:":8080"`
+	JwtSecret  string `mapstructure:"JWT_SECRET"`
 
 	RedisDsn    string `mapstructure:"BLACKLIST_URL"`
 	PostgresDsn string `mapstructure:"POSTGRES_URL"`
